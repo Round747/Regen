@@ -1,0 +1,271 @@
+:root, :root.green{
+
+    --Thin-font-: "Dina";
+    --Font-size-: 1.5em;
+    --Line-height-: 1em;
+    /*
+    --Thin-font-: "Osborne";
+    --Font-size: 1em; 
+    --Line-height: 1.3em;
+    */
+    
+
+    --Main-color-: rgb(107, 240, 107);
+    --Main-shadow-: rgb(4, 218, 4);
+
+    --Background-color-: rgb(16, 19, 17);
+
+    --Scrollbar-color-: rgb(126, 253, 126);
+
+    --Border-color-: black;
+}
+
+*{
+    box-sizing: border-box;
+    pointer-events: none;
+    cursor: none;
+}
+
+Body{
+    background-color: var(--Border-color-);
+    margin: 0;
+    
+}
+
+.overlay{
+    position: fixed; 
+    height: 100vh; 
+    width: 100vw;
+    
+    z-index: 6; 
+    
+    left: 50%;
+    transform: translate(-50%);
+    top: 0; 
+    pointer-events: none;
+}
+
+#Body{
+    width: 66%;
+    position: fixed;
+    height: 100%;
+    background-color: var(--Background-color-);
+    
+    margin: auto;
+    
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    overflow: hidden;
+    
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#Main{
+    padding: 15px;
+    margin: 15px;
+    
+    overflow: hidden;
+
+    margin-bottom: 0px;
+    height: 100%;
+}
+
+#Screen-cover{
+    width: 66%;
+    position: fixed;
+    height: 100%;
+    background-color: var(--Background-color-);
+    
+    margin: auto;
+    
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: 3;
+}
+
+#screen-flash{
+    width: 841px;
+    position: fixed;
+    height: 100%;
+    background-color: var(--Background-color-);
+    
+    margin: auto;
+    
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: 2;
+}
+
+.Box{
+    border: 3px solid var(--Main-color-);
+    box-shadow: 0px 0px 1px var(--Main-shadow-), 0px 0px 1px var(--Main-shadow-) inset;
+    
+    border-top: 5px solid var(--Main-color-);
+    border-bottom: 5px solid var(--Main-color-);
+
+    padding: 15px;
+    margin: auto;
+    margin-top: 15px;
+
+    width: fit-content;
+
+}
+
+p, pre{
+    font-family: var(--Thin-font-);
+    color: var(--Main-color-);
+    text-shadow: 0px 0px 1px var(--Main-shadow-);
+    margin: 10px;
+    
+    margin-bottom: 20px;
+    line-height: var(--Line-height);
+    font-size: var(--Font-size-);
+    
+    
+}
+
+hr{
+    border: 1.5px solid var(--Main-color-);
+    margin: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 1px var(--Main-shadow-);
+}
+
+#seperator{
+    border: 1.5px solid var(--Main-color-);
+    margin: 40px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    
+}
+
+#Input-holder{
+    width: 100%;
+    padding: 15px;
+}
+
+input{
+    background-color: var(--Background-color-);
+    border: 3px solid var(--Background-color-);
+    
+    font-family: var(--Thin-font-);
+    color: var(--Main-color-);
+    
+    font-size: var(--Font-size-);
+    
+    width: 50%;
+
+    outline: none;
+
+    padding: 5px;
+    padding-left: 0;
+    padding-right: 25px;
+    
+    text-transform: uppercase;
+
+    caret-color: var(--Main-color-);
+    box-sizing: border-box;
+    display: inline;
+
+    caret-shape: block;
+}
+
+#disk{
+    display: inline;
+    margin-left: 25px;
+    margin-right: 5px;
+}
+
+
+
+.centre-align{
+    text-align: center;
+    
+}
+
+@font-face {
+    font-family: "DinaII";
+    src: url(Fonts/DinaRemasterII.ttc);
+}
+
+@font-face {
+    font-family: "Dina";
+    src: url(Fonts/dina10px.ttf);
+}
+
+@font-face {
+    font-family: "Osborne";
+    src: url(Fonts/osborne.ttf);
+}
+
+
+:root.amber{
+    
+    --Thin-font-: "Dina";
+    --Font-size-: 1.5em;
+    --Line-height-: 1em;
+
+    --Main-color-: rgb(250, 198, 85);
+    --Main-shadow-: rgb(237, 162, 0);
+
+    --Background-color-: rgb(23, 19, 10);
+
+    --Border-color-: black;
+
+}
+    
+:root.blue{
+    --Thin-font-: "Dina";
+    --Font-size-: 1.5em;
+    --Line-height-: 1em;
+    
+    --Main-color-: rgb(177, 214, 254);
+    --Main-shadow-: rgb(0, 123, 255);
+
+    --Background-color-: rgb(13, 18, 25);
+
+    --Border-color-: black;
+}
+
+:root.white{
+    --Thin-font-: "Dina";
+    --Font-size-: 1.5em;
+    --Line-height-: 1em;
+
+    --Main-color-: rgb(255, 255, 255);
+    --Main-shadow-: rgb(147, 147, 147);
+
+    --Background-color-: rgb(19, 19, 19);
+
+    --Border-color-: black;
+}
+
+#warning{
+    display: none;
+}
+@media (max-width: 800px) {
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+    #Body{
+        display: none;
+    }
+
+    #warning{
+        display: block;
+        text-align: center;
+        
+       
+        margin: 20px;
+        margin-top: 250px;
+    }
+  }
+

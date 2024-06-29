@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regen Terminal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- image overlays go here -->
+    <div class="overlay" style="background-image: url(Images/glass2.png); opacity: 2%;"></div>
+    <div class="overlay" style="background-image: url(Images/scanlines.png); background-repeat: repeat; opacity: 10%; background-size: 100%;"></div>
+    <div id="Screen-cover"></div>
+    
+    <div id="Body">
+        <div id="Main">
+            <!-- Text content goes here -->
+            
+        </div> 
+
+        <hr id="seperator">
+
+        <div id="Input-holder">
+            <p id="disk">C:></p>
+            <input id="Input-bar" type="text" autofocus spellcheck="false" autocomplete="off">
+        </div>
+    </div>
+
+    <!-- Javascript files go here -->
+    <script src="Javascripts/controls.js"></script> 
+    <script src="Javascripts/screen-animation.js"></script>  
+    <script src="Javascripts/buttonsounds.js"></script>
+    <script src="Javascripts/setscreenwidth.js"></script>
+   
+</body>
+</html>
